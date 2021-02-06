@@ -1,0 +1,81 @@
+header{
+	color: #fff;
+}
+.header-container{
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #000;
+}
+.navigation-enter{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 20px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.navigation ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+.navigation{
+	min-width: 66%;
+	max-width: 100%;
+}
+.navigation a{
+	color: #fff;
+}
+.navigation li a{
+	position: relative;
+	transition: .3s;
+}
+.navigation li a:hover:after{
+	content: "";
+	position: absolute;
+	top: 48px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+}
+.enter{
+	display: flex;
+	min-width: 33%;
+	max-width: 100%;
+	justify-content: flex-end;
+	align-items: center;
+}
+.enter img{
+	height: 16px;
+	margin-right: 15px;
+}
+.logo{
+	padding: 82px 0 30px;
+	max-width: 372px;
+	margin: 0 auto;
+}
+.adventures{
+	display: flex;
+}
+.icon-text{
+	min-width: 33.333%;
+	text-align: center;
+	padding: 0 20px;
+}
+.icon-text p:first-child{
+	font-size: 30px;
+	padding-bottom: 70px;
+	position: relative;
+}
+.icon-text p:first-child:after{
+	content: '';
+	position: absolute;
+	top: 46px;
+	left: 46%;
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
+	background: #f7f4f1;
+}
