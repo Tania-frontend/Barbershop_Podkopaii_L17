@@ -1,0 +1,40 @@
+
+.col--50:last-child .title--30{
+	margin: 0 0 48px;
+}
+
+.swiper-wrapper{
+	position: relative;
+	box-sizing: border-box;
+}
+.swiper-wrapper .swiper-slide img {
+    border: 4px solid #fff;
+}
+.swiper-button-prev:after,.swiper-button-next:after {
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	font-family: inherit;	
+}
+.swiper-button-prev{
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+.swiper-button-prev, .swiper-button-next {
+	@extend .btn__large;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	left: 0;
+}
+.swiper-container .swiper-button-next:after{
+	content: "ДАЛЕЕ";
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.swiper-container .swiper-button-prev:after{
+	content: "НАЗАД";
+	font-size: 14px;
+	text-transform: uppercase;
+}
