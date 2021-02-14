@@ -26,4 +26,36 @@ $('.navigation').toggleClass('menu-opened');
 
 });
 
- });
+
+//Login modal
+$('.js-login').on('click', function (e){
+  $('.modal--login').fadeIn();
+
+});
+
+
+$('.modal__close').on('click', function (e){
+  $('.modal--login').fadeOut();
+
+
+});
+
+$(document).on('mouseup', function (event){
+  const loginModal = $('.modal__window');
+  if(!loginModal.is(event.target) && loginModal.has(event.target).length === 0){
+      $('.modal').fadeOut();
+  }
+})
+
+});
+
+/*
+
+$(document).on('mouseup', function (event){
+  const menuMobile = $('.menu-opened .navigation__menu');
+  if(!menuMobile.is(event.target) && menuMobile.has(event.target).length === 0){
+      $('.menu-opened .navigation__menu').fadeOut();
+  }
+});
+*/
+
