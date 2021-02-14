@@ -56,6 +56,10 @@
     right: auto;
     left: auto;
     }
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    right: auto;
+    left: auto;
+}
 .swiper-button-prev, .swiper-button-next {
 	@extend .btn__large;
 }
