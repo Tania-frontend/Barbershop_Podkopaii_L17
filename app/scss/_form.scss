@@ -53,6 +53,10 @@
 		@extend .btn;
 		width: 100%;
 		margin-top: 5px;
+
+		@include screen(480){
+			margin-top: 20px;
+		}
 	}
 }
 
