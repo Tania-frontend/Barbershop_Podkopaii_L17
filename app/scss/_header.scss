@@ -97,10 +97,12 @@ header{
 				position: absolute;
 				top: 0;
 				right: -550px;
-				width: 350px;
+				width: 200px;
 				min-height: 100vh;
+				min-width: inherit;
 				z-index: 11;
 				transition: .3s;
+				text-align: center;
 			}
 
 	&_mobile{
@@ -150,6 +152,7 @@ header{
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	@include screen(768){
 		flex-direction: column;
@@ -162,11 +165,21 @@ header{
 		color: #292929;
 	}
 	}
-	li a{
+	li {
+
+	@include screen(768){
+	padding: 5px 0;
+	}
+
+	a{
 	position: relative;
 	transition: .3s;
+
+	@include screen(768){
+	padding: 10px 0;
 	}
-	li a:hover:after{
+	}
+	a:hover:after{
 	content: "";
 	position: absolute;
 	top: 48px;
@@ -174,6 +187,7 @@ header{
 	width: 100%;
 	height: 4px;
 	background: #fff;
+}
 }
 }
 	&__enter{
