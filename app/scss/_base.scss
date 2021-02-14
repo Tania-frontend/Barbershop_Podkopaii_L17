@@ -35,6 +35,7 @@ input, button{
 }
 .wrapper{
 overflow: hidden;
+position: relative;
 }
 
 body{
@@ -44,6 +45,11 @@ body{
 
 .row{
 	display: flex;
+	justify-content: space-between;
+
+	@include screen(480){
+		flex-direction: column;
+	}
 }
 .col{
 flex-grow: 1;
@@ -53,4 +59,15 @@ width: 100%;
 		@extend .col;
 		width: 50%;
 	}
-}
+	&--33{
+		@extend .col;
+		width: 33.3333%;
+
+		@include screen(480){
+			width: 100%;
+			text-align: center;
+			padding: 20px 0;
+		}
+	}
+	}
+

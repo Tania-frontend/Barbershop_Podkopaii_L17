@@ -26,6 +26,7 @@
 	transition: .3s;
 	font-size: 14px;
 	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', sans-serif;
 
 	&:hover{
 		background: $white;
@@ -43,10 +44,15 @@
 	&__large{
 		@extend .btn;
 		min-width: 140px;
+
+		@include screen(480){
+			min-width: 125px;
+		}
 	}
 	&__fullWidth{
 		@extend .btn;
 		width: 100%;
+		margin-top: 30px;
 	}
 }
 
@@ -71,6 +77,22 @@
 		background-image: url("../images/dest/password.png");
 		background-position: calc(100% - 13px) 50%;
 		}
+	&--date{
+		@extend .input;
+		}
+	&--name{
+		@extend .input;
+		}
+	&--time{
+		@extend .input;
+		}
+	&--phone{
+		@extend .input;
+		}
+
+	&:first-child{
+		margin-bottom: 20px;
+	}
 	}
 
 	.form{
@@ -85,9 +107,9 @@
 				flex-wrap: wrap;
 			}
 		}
+		
 		&__column{
-			width: calc(50% -10px);
-
+		width: calc(50% - 10px);
 		}
 	}
 
