@@ -8,15 +8,13 @@
 }
 
 .swiper-container{
-	max-width: 289px;
+	max-width: 293px;
 	overflow: hidden;
 	margin-left: 0;
 
 
 		@include screen(768){
-		max-width: none;
- 		overflow:visible;
-		margin-left: 0;
+		margin: 0 auto;
  		}
 
  	.btn-align{
@@ -33,7 +31,7 @@
 }
 .swiper-wrapper .swiper-slide img {
     border: 4px solid #fff;
-    max-width: 286px;
+    max-width: 293px;
 }
 .swiper-button-prev:after,.swiper-button-next:after {
 	position: absolute;
