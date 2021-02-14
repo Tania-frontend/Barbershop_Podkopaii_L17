@@ -110,8 +110,16 @@
 		
 		&__column{
 		width: calc(50% - 10px);
+
+		@include screen(480){
+		width: 100%;	
 		}
-	}
+		}
+		&__column:nth-child(1){
+			margin-bottom: 20px;
+		}
+		}
+	
 
 	input {
 

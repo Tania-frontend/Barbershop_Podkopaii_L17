@@ -14,9 +14,15 @@
 
 
 		@include screen(768){
+		max-width: none;
  		overflow:visible;
 		margin-left: 0;
  		}
+
+ 	.btn-align{
+ 		display: flex;
+ 		justify-content: space-between;
+ 	}
 }
 .swiper-wrapper{
 	position: relative;
@@ -47,7 +53,8 @@
 
 }
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    right: 0px;
+    right: auto;
+    left: auto;
     }
 .swiper-button-prev, .swiper-button-next {
 	@extend .btn__large;

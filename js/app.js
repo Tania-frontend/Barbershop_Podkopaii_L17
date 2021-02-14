@@ -1,6 +1,4 @@
 $(document).ready(function() {
-	alert(1);
-});
  var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   loop: true,
@@ -27,3 +25,5 @@ $(document).ready(function() {
 $('.navigation').toggleClass('menu-opened');
 
 });
+
+ });

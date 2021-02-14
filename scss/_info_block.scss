@@ -42,7 +42,7 @@
 
  		@include screen(768){
  		padding-left: 0px;
- 		padding-top: 70px;
+ 		padding-top: 35px;
  		}
 	}
 
@@ -60,13 +60,16 @@
 	height: 64%;
 
 	@include screen(768){
- 		top: calc(50% - 280px);
- 		transform: rotate(90deg);
+ 		display: none;
  	}
 
 }
 .title--30{
 	margin: 0 0 30px;
+
+	@include screen(768){
+		margin: 0 0 25px  !important;
+	}
 }
 
 &__date{
