@@ -24,13 +24,23 @@
 
 	&__window{
 		background: $light_bg;
-		padding: 52px 80px 54px;
+		padding: 52px 90px 54px;
 		max-height: 90%;
-		max-width: 90%;
+		max-width: 465px;
 		position: relative;
 
 		.form__column{
 			text-decoration: underline;
+			margin-top: 20px;
+		}
+
+		.form__column:nth-child(2){
+			text-align: right;
+
+			@include screen(480){
+				text-align: left;
+				margin: 0;
+		}
 		}
 	}
 
@@ -43,5 +53,13 @@
 		background: url("../images/dest/close.png") no-repeat 50%;
 		background-size: 100% 100%;
 		cursor: pointer;
+	}
+
+	p{
+	margin: 25px 0;	
+
+	@include screen(480){
+				margin: 10px 0;
+		}
 	}
 }
