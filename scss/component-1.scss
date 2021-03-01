@@ -1,0 +1,23 @@
+#component-1{
+	margin-bottom: 0;
+
+.row{
+.col-sm-8{
+	h2{
+		text-align: left;
+		color: $green;
+		max-width: 540px;
+
+		span{
+			font-size: 48px;
+		}
+	}
+	p{
+		max-width: 665px;
+		font-size: 18px;
+		margin: 50px 0;
+	}
+}
+
+}
+}
