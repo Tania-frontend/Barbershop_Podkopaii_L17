@@ -1,61 +1,29 @@
 $(document).ready(function() {
- var mySwiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  loop: true,
-  slidesPerView: 'auto',
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  autoplay: {
-            delay: 60000,
-            disableOnInteraction: false
-  },
- })
-
- $('.navigation').on('click', '.navigation__menu_mobile', function(){
-$('.navigation').toggleClass('menu-opened');
-
-});
 
 
 //Login modal
-$('.js-login').on('click', function (e){
-  $('.modal--login').fadeIn();
+$('.popup-link').on('click', function (e){
+  $('.popup-map').fadeIn();
 
 });
 
 
-$('.modal__close').on('click', function (e){
-  $('.modal--login').fadeOut();
+$('.popup__close').on('click', function (e){
+  $('.popup-map').fadeOut();
 
 
 });
 
 $(document).on('mouseup', function (event){
-  const loginModal = $('.modal__window');
-  if(!loginModal.is(event.target) && loginModal.has(event.target).length === 0){
-      $('.modal').fadeOut();
+  const popupMap = $('.popup__window');
+  if(!popupMap.is(event.target) && popupMap.has(event.target).length === 0){
+      $('.popup').fadeOut();
   }
 })
 
 });
 
-/*
 
-$(document).on('mouseup', function (event){
-  const menuMobile = $('.menu-opened .navigation__menu');
-  if(!menuMobile.is(event.target) && menuMobile.has(event.target).length === 0){
-      $('.menu-opened .navigation__menu').fadeOut();
-  }
-});
-*/
+
+
 

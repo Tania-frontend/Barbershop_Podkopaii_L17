@@ -1,60 +1,36 @@
-footer{
-	color: $white;
-	background: $footer_bg;
-	margin: 30px 0 0 0;
-	padding: 60px 0;
+#footer{
 
-	@include screen(480){
-		padding: 30px 0;
-		margin: 0;
-	}
+	.wrapper-footer{
+		padding: 0px 0;
 
-	.row{
-
-		.col--33{
-
-			.btn-align{
-				display: flex;
-				
-				.btn__small{
-					min-height: 43px;
-					min-width: 43px;
-					padding: 9px;
-				}
-
-				.btn__small:hover img{
-				filter: invert(1);
-				}
-
-				.btn__small:nth-child(2){
-					margin: 0 10px;
-				}
-				}
+		.row{
+			a{
+				display: block;
+				color: #535353;
+				margin-bottom: 10px;
+			}
+			.col-sm-3{
+			
+			a.social{
+				position: relative;
+			}
+			a.social:before{
+				content: url(../images/dest/whatsapp.png);
+				width: 22px;
+				position: absolute;
+				left: -30px;
+				top: 0;
 			}
 		}
-		.col--33:nth-child(2){
-			text-align: center;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
 
-		}
-		.col--33:nth-child(3){
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
-			text-align: center;
-
-			@include screen(480){
-				align-items: center;
+		.col-sm-5{
+			p{
+				line-height: 28px;
 			}
-
-			.btn-align{
-				flex-direction: column;
+			a{
+				margin-top: 13px;
 			}
 		}
-		a{
-			color: $white;
 		}
 	}
-
+}

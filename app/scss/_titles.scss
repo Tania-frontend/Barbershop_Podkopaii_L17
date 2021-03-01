@@ -1,14 +1,22 @@
-.title{
-	text-transform: uppercase;
+h3.ceremonious{
+	font-family: 'Ceremonious_one';
+	font-size: 40px;
+ 	 font-family: "Ceremonious One";
+ 	 color: rgb(187, 156, 102);
+ 	 line-height: 0.625;
+  	text-align: center;
+  	padding-top: 35px;
+  	text-transform: capitalize;
+  	font-weight: 400;
+}
+h3.pfdin-medium{
+	 font-size: 35px;
+	  font-family: "pfdintextcondpro-regular";
+	  letter-spacing: 2px;
+	  color: rgb(255, 255, 255);
+	  text-transform: uppercase;
+	  line-height: 1;
+	  text-align: center;
+	  padding: 21px 0px 33px;
 
-	&--30{
-		@extend .title;
-		font-size: 30px;
-		color: $black;
-	}
-
-	&--30white {
-	@extend .title--30;
-	color: $white;
-	}
 }

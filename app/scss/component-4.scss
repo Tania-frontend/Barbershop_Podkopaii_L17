@@ -1,0 +1,40 @@
+#component-4{
+
+
+	.wysiwyg-image{
+		.row{
+			align-items: flex-end;
+		}
+
+		.col-sm-8{
+
+
+		h2{
+			text-align: left;
+			margin-bottom: 70px;
+		}
+		p{
+			margin-bottom: 30px;
+			font-weight: 400;
+			line-height: 28px;
+		}
+		}
+
+		.col-sm-4{
+
+			.map{
+			max-width: 255px;
+			margin: 0 auto;
+			}
+			img{
+				display: block;
+				width: 127px;
+				margin: 0 auto;
+				padding-bottom: 20px;
+			}
+		}
+	}
+	.full_width_map{
+		display: none;
+	}
+}

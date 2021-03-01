@@ -1,0 +1,23 @@
+#component-9{
+background-color: #00ACEA;
+padding: 77px 0;
+
+	.row{
+		align-items: center;
+
+		.col-sm-3{
+			h4{
+				color: $white;
+				text-align: left;
+				margin-bottom: 0;
+			}
+			p{
+				font-size: 16px;
+				font-weight: 400;
+				color: $white;
+			}
+		}
+	}
+
+}
+	

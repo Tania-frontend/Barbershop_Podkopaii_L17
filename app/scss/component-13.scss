@@ -1,0 +1,29 @@
+#component-13{
+	background: $green;
+
+	.wysiwyg-image{
+		padding-top: 30px;
+
+	.row{
+		justify-content: center;
+		align-items: center;
+
+		.col-sm-8{
+			h2{
+				color: $white;
+				text-align: left;
+				margin-bottom: 35px;
+			}
+			a.btn{
+				background: $white;
+				color: $green;
+			}
+			a.btn:hover{
+				color: $white;
+				background: $blue;
+			}
+		}
+	
+	}
+	}
+}
